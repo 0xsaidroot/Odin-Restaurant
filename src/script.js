@@ -1,3 +1,7 @@
 import "./styles.css";
+import home from './home';
 
-alert('Its Working');
+const body = document.querySelector('#content');
+const nav = document.querySelector('nav');
+
+body.appendChild(home);

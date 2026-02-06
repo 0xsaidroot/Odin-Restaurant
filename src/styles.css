@@ -1,3 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header{
+    display: flex;
+    height: 20%;
+    justify-content: space-between;
+}
+.generalBody{
+    display: flex;
+    background-color:#e7ecef ;
+    height: 80%;
+}
+nav{
+    display: flex;
+    flex: 50%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5rem;
+}
+nav > button{
+    font-size: 2.5rem;
+    padding: .5em;
+    border: none;
+    background-color: transparent; 
+    outline: none; 
+    box-shadow: none; 
 }
