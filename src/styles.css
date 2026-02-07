@@ -10,26 +10,47 @@ body{
 }
 header{
     display: flex;
-    height: 20%;
+    height: 15%;
     justify-content: space-between;
+    padding-right: 10px;
+}
+#content{
+    flex: 1;
 }
 .generalBody{
     display: flex;
     background-color:#e7ecef ;
-    height: 80%;
+    width: 100%;
+    height: 100%;
 }
 nav{
     display: flex;
     flex: 50%;
     align-items: center;
     justify-content: flex-end;
-    gap: 5rem;
+    gap: 3.5rem;
 }
 nav > button{
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: .5em;
     border: none;
     background-color: transparent; 
     outline: none; 
     box-shadow: none; 
+}
+.homeBody{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+}
+.homeImage{
+    border-radius: 10px;
+    width: 95%;
+    height: 400px;
+    object-fit: cover;
+
 }

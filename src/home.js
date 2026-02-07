@@ -1,13 +1,17 @@
-import homeImage from './home.jpg';
-import './home.css'
+import homeImage from "./assets/home.jpg";
 
 const body = document.createElement('div');
-const img = document.createElement('img');
+const img = new Image();
+const heading = document.createElement('h1');
+const paragraph = document.createElement('p');
 
-img.scr = homeImage;
+heading.textContent = "Welcome to Rouky's Grill "
+paragraph.textContent = "Get ready for the most exciting grill party!!!";
+img.src = homeImage;
 img.classList.add('homeImage');
-body.classList.add('generalBody');
-body.append(img);
+body.classList.add('generalBody','homeBody');
+
+body.append(heading,paragraph,img);
 
 export default body;
 
