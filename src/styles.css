@@ -19,6 +19,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Sinkin Sans 400';
 }
 :root{
     --main-bg-color:#FF3800;
@@ -28,7 +29,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    font-family: 'Sinkin Sans 400';
 }
 header {
     display: flex;
