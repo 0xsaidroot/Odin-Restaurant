@@ -2,7 +2,7 @@ import path from "node:path"
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import { watchFile } from "node:fs";
 
-export default{
+export default {
     mode: "development",
     entry: "./src/script.js",
     output: {
@@ -23,7 +23,7 @@ export default{
         rules: [
             {
                 test: /\.css$/i,
-                use: ["style-loader","css-loader"],
+                use: ["style-loader", "css-loader"],
             },
             {
                 test: /\.html$/i,
@@ -32,6 +32,10 @@ export default{
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: "asset/resource",
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
             },
         ],
     },
