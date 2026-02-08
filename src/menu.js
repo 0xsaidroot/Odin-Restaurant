@@ -26,7 +26,7 @@ const food = [
     }, {
         name: 'Grilled Chicken',
         price: '3000 FCFA',
-        desc: 'A flavorful and long marinated tilapia fish',
+        desc: 'Grilled Chicken',
         imgsrc: chicken
     },
 ]

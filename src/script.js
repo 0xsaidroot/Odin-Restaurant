@@ -6,7 +6,7 @@ import menu from './menu'
 const body = document.querySelector('#content');
 const nav = document.querySelector('nav');
 
-body.appendChild(about);
+body.appendChild(home);
 
 nav.addEventListener('click',function(e){
     const target = e.target.id;
