@@ -20,6 +20,10 @@ header{
 .generalBody{
     display: flex;
     background-color:#e7ecef ;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
     width: 100%;
     height: 100%;
 }
@@ -39,11 +43,6 @@ nav > button{
     box-shadow: none; 
 }
 .homeBody{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    padding: 2rem;
     width: 100%;
     height: 100%;
 }
@@ -52,5 +51,11 @@ nav > button{
     width: 95%;
     height: 400px;
     object-fit: cover;
-
+}
+.foodContainer{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+.menuImage{
+    height: auto;
 }

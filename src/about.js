@@ -1,16 +1,14 @@
-import homeImage from "./assets/home.jpg";
+// import homeImage from "./assets/home.jpg";
+// const img = new Image();
 
 const body = document.createElement('div');
-const img = new Image();
 const heading = document.createElement('h1');
-const paragraph = document.createElement('p');
+const container = document.createElement('div');
 
-heading.textContent = "Welcome to Rouky's Grill "
-paragraph.textContent = "Get ready for the most exciting grill party!!!";
-img.src = homeImage;
-img.classList.add('homeImage');
-body.classList.add('generalBody','homeBody');
 
-body.append(heading,paragraph,img);
+heading.textContent = "About US"
+
+body.classList.add('generalBody',);
+body.append(heading);
 
 export default body;
