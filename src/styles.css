@@ -1,61 +1,83 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+body {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
-header{
+header {
     display: flex;
     height: 15%;
     justify-content: space-between;
     padding-right: 10px;
 }
-#content{
+#content {
     flex: 1;
 }
-.generalBody{
+.generalBody {
     display: flex;
-    background-color:#e7ecef ;
-    justify-content: space-around;
+    background-color: #e7ecef;
     align-items: center;
     flex-direction: column;
     padding: 2rem;
     width: 100%;
     height: 100%;
 }
-nav{
+nav {
     display: flex;
     flex: 50%;
     align-items: center;
     justify-content: flex-end;
     gap: 3.5rem;
 }
-nav > button{
+nav>button {
     font-size: 2rem;
     padding: .5em;
     border: none;
-    background-color: transparent; 
-    outline: none; 
-    box-shadow: none; 
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
 }
-.homeBody{
+.homeBody {
     width: 100%;
     height: 100%;
+    justify-content: space-around;
 }
-.homeImage{
+.homeImage {
     border-radius: 10px;
     width: 95%;
     height: 400px;
     object-fit: cover;
 }
-.foodContainer{
-    display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+.menuBody {
+    gap: 2em;
 }
-.menuImage{
-    height: auto;
+.foodContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+    gap: 20px;
+}
+.menuImage {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-bottom: 1px solid grey;
+}
+.food {
+    display: grid;
+    grid-template-rows: 70% 1fr;
+    border: 1px solid grey;
+}
+.foodBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.foodHead{
+    display: flex;
+    justify-content: space-between;
 }
